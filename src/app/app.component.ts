@@ -14,6 +14,8 @@ export class AppComponent {
   }
 
   async initializeApp() {
+    this.result = await LiveUpdates.sync();
+    alert(JSON.stringify(this.result))
     try {
       // Register event to fire each time user resumes the app  
       App.addListener('appStateChange', async (state) => {
@@ -32,8 +34,7 @@ export class AppComponent {
       console.error('Error initializing app', error);
     }
 
-    this.result = await LiveUpdates.sync();
-    alert(JSON.stringify(this.result))
+
   }
   
 
