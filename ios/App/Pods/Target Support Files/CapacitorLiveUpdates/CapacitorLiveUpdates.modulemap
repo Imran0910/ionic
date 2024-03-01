@@ -1,6 +1,0 @@
-framework module CapacitorLiveUpdates {
-  umbrella header "CapacitorLiveUpdates-umbrella.h"
-
-  export *
-  module * { export * }
-}
