@@ -12,7 +12,7 @@ const config: CapacitorConfig = {
       appId: '6e9eeae7',
       channel: 'Production',
       autoUpdateMethod: 'background',
-      maxVersions: 2
+      maxVersions: 99
     }
   }
 };
