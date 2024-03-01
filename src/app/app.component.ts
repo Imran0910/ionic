@@ -19,6 +19,7 @@ export class AppComponent {
     try {
       // Register event to fire each time user resumes the app  
       App.addListener('appStateChange', async (state) => {
+        alert(state.isActive)
         if (state.isActive && localStorage.getItem('shouldReloadApp') === 'true') {
           await LiveUpdates.reload();
         } else {
